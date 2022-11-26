@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+    <link rel="shortcut icon" href="images/logo dlada.png"
+    <br>
+    <title>Login</title>
+    <div text-align="center"><a href="index.html"><img src="images/home.png" height="60"></a></div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body class="p-3 m-2 border-radius 5px solid bd-example">
+    <style>
+
+       
+body{
+            background:#f2d6f2;
+            background: linear-gradient(to right,#e7d6ee, #dbcae4)
+            border radius 5px, #75c3d6;
+        }
+
+        .bg{
+            background-image: url(images/login\ dlada.png);
+            padding-top: 25rem;
+            background-position: top;
+            background-size: cover;
+        }
+        #Modal2{
+            background-color: rgb(224, 207, 227);
+        }
+
+
+        #Modal1{
+          background-color: rgb(224, 207, 227);
+        }
+
+    </style>
+
+    
+</head>
+<body>
+    <div class="container w-75  mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col bg d-flex d-lg-block col-sm-12 col-md-6 col-lg-4 col-xl-6 rounded">
+                
+            </div>
+            <div class="col bg--gradient background-color: rgb(235, 200, 227); p-5 rounded-end">
+                <div class="text-end">
+                    <img src="images/logo-mision.png" alt="100px"; width="200px">
+                </div>
+
+                <h2 class="fw-bold text-center py-5">Usuario</h2>
+
+                <!-------LOGIN --------->
+                <form name="loginForm">
+                    <div class="mb-4">
+                        <label for="email" class="form-label"><b>Correo Electrónico</b></label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo" >
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label"><b>Contraseña</b></label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Ingrese su contraseña" >
+                    </div>
+                    <div class="mb-4">
+                    
+                    </div>
+                    <div class="d-grid">
+                        <!-- <a href="bienvenido_bibliotecario.html"button type="submit" class="btn btn-primary rounded-sm">Iniciar Sesión</a> -->
+                        <input type="button" class="btn btn-primary rounded-sm" value="Iniciar Sesión" id="boton" onclick="login()"> 
+                    </div>
+                    <br>
+  
+    <hr><h6><b>Aún no tienes cuenta?</b></h6>
+    <button type="button" class="btn btn-primary" margin-bottom="35px;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Crear mi cuenta nueva</button></form>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="max-width: 18rem;">
+      <div class="modal-dialog">
+        <div class="modal-content"id ="Modal2">
+          <div class="modal-header">
+            <h4 class="modal-title" id="modal-title">Registrarse</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form name="formAgregarUsuario">
+              <div class="mb-3">
+                <label for="exampleModal" class="col-form-label">DNI:</label>
+                <input type="text" class="form-control" id="dni" name="dni">
+              </div>
+              <div class="mb-3">
+                <label for="exampleModal" class="col-form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre">
+              </div>
+              <div class="mb-3">
+                <label for="exampleModal" class="col-form-label">Apellidos:</label>
+                <input type="text" class="form-control" id="apellidos" name="apellidos">
+              </div>
+              <div class="mb-3">
+                <label for="exampleModal" class="col-form-label">Telefono:</label>
+                <input type="text" class="form-control" id="telefono" name="telefono">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Correo:</label>
+                <input type="email" class="form-control" id="correo" name="correo">
+              </div>
+              <div class="mb-3">
+                <label for="" class="col-form-label">Contraseña:</label>
+                <input type="password" class="form-control" id="contrasena" name="contrasena">
+              </div>
+              <div class="mb-3">
+                <label for="" class="col-form-label">Verificacion de contraseña</label>
+                <input type="password" class="form-control" id="contrasenav" name="contrasenav">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" onclick="agregarMiembro()">Crear cuenta</button>
+          </div>
+          
+        </div>
+      </div>
+    </div> 
+   
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+  </main>
+  <!--Pie de página-->
+  <footer></footer>
+
+  <!------Scripts------>
+  <script type="text/javascript" src="login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="images/logo dlada.png"
+        <br>
+		<title>Registrar Libro</title>
+		<!--Cargar hoja de estilo-->
+		<link rel="stylesheet" href="./styles/formulario.css" />
+		<!--Implementar bootstrap-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+			crossorigin="anonymous"
+		/>
+		</head>
+</head>
+<body class="p-3 m-2 border-radius 5px solid bd-example">
+    <style>
+
+       
+body{
+            background:#f2d6f2;
+            background: linear-gradient(to right,#e7d6ee, #dbcae4)
+            border radius 5px, #75c3d6;
+        }
+
+        .bg{
+            background-image: url();
+            padding-top: 25rem;
+            background-position: top;
+            background-size: cover;
+        }
+        #Modal2{
+            background-color: rgb(224, 207, 227);
+        }
+
+
+        #Modal1{
+          background-color: rgb(224, 207, 227);
+        }
+
+    </style>
+
+    
+</head>
+	<body>
+		<!---Encabezado-->
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">Navbar</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNavAltMarkup"
+						aria-controls="navbarNavAltMarkup"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						<div class="navbar-nav">
+							<a class="nav-link" aria-current="page" href="index.html">Home</a>
+							<a class="nav-link active" href="#">Registrar Libro</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<section id="section-form">
+				<div class="container">
+					<!--Formulario-->
+					<form onsubmit="get_data_form(event)">
+						<!---Nombre---->
+						<label for="nombre" class="form-label">Nombre:</label>
+						<input type="text" name="nombre" id="nombre" class="form-control" />
+						<br />
+						<!---Apellido---->
+						<label for="categoria" class="form-label">Categoria:</label>
+						<input
+							type="text"
+							name="categoria"
+							id="categoria"
+							class="form-control"
+						/>
+						<br />
+						<!---Raza---->
+						<label for="raza" class="form-label">Autor:</label>
+						<input type="text" name="raza" id="raza" class="form-control" />
+						<br />
+						<!---Foto---->
+						<label for="foto" class="form-label">Foto:</label>
+						<input type="text" name="foto" id="foto" class="form-control" />
+						<br />
+						<!---Observacion---->
+						<label for="observacion" class="form-label">Observación:</label>
+						<textarea
+							name="observacion"
+							id="observacion"
+							class="form-control"
+						></textarea>
+						<br />
+						<!---Botón de guardar---->
+						<div id="cont-btn">
+							<button type="submit" class="btn btn-primary" id="btn-registrar">
+								Registrar
+							</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer></footer>
+		<!---Cargar Scripts---->
+		<script src="scripts/formulario.js"></>
+		script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+			integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+			integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
